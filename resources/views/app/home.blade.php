@@ -100,8 +100,8 @@
 					<p class="mb-4">
                         Assalamu’alaikum Wr. Wb.
 
-                        Puji syukur alhamdulillah kami panjatkan ke hadirat Allah SWT atas limpahan rahmat, bimbingan serta karunia-Nya sehingga Website Desa Pematang Sukaramah dapat hadir dihadapan masyarakat luas, khususnya warga Desa Pematang Sukaramah Kecamatan Sembawa Kabupaten Banyuasin.
-                        Website ini dibuat dan dikembangkan dalam rangka memenuhi tuntutan era globalisasi sehingga keberadaan Desa LLalang Sembawa dengan segala informasinya dapat diketahui oleh masyarakat luas, dan sebagai sarana komunikasi antara seluruh komponen dan stakeholder yang ada di Desa Pematang Sukaramah, untuk kemajuan Desa.
+                        Puji syukur alhamdulillah kami panjatkan ke hadirat Allah SWT atas limpahan rahmat, bimbingan serta karunia-Nya sehingga Website Desa Pematang Sukaramah dapat hadir dihadapan masyarakat luas, khususnya warga Desa Pematang Sukaramah Kecamatan Mesuji Makmur, Kabupaten Ogan Komering Ilir.
+                        Website ini dibuat dan dikembangkan dalam rangka memenuhi tuntutan era globalisasi sehingga keberadaan Desa Pematang Sukaramah dapat diketahui oleh masyarakat luas, dan sebagai sarana komunikasi antara seluruh komponen dan stakeholder yang ada di Desa Pematang Sukaramah, untuk kemajuan Desa.
                         Ucapan terima kasih tak lupa kami sampaikan kepada semua pihak yang telah berusaha membangun dan mengembangkan Website Desa Pematang Sukaramah ini, semoga jerih payahnya tidak sia-sia demi membangun dan memajukan Desa Pematang Sukaramah.
                         Akhir kata, kritik dan saran yang membangun untuk kesempurnaan Website Desa Pematang Sukaramah ini, sangat kami harapkan dari segenap pembaca. Semoga keberadaannya memenuhi harapan dan tujuan serta banyak membawa manfaat. Amiin.
 
