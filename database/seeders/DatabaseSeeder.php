@@ -29,6 +29,15 @@ class DatabaseSeeder extends Seeder
             'role'  => 'admin',
         ]);
 
+        User::create([
+            'nik' => '1741010249',
+            'nama' => 'User',
+            'no_tlp'    => '085741492045',
+            'password'  => Hash::make('user123'),
+            'alamat'    => 'Jalan sama aku nikah sama dia',
+            'role'  => 'user',
+        ]);
+
         $data = [
             ['kategori_pengaduan' => 'Pelayanan'],
             ['kategori_pengaduan' => 'Pembangunan'],
