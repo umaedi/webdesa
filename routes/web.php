@@ -17,6 +17,7 @@ Route::get('/', HomeController::class)->name('home');
 Route::controller(InformasiController::class)->group(function() {
     Route::get('informasi', 'index')->name('informasi');
     Route::get('/informasi/detail/{slug}', 'show');
+    Route::get('/tentang', 'tentang');
 });
 
 //route for kontak

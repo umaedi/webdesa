@@ -26,4 +26,11 @@ class InformasiController extends Controller
         $categories = Category::withCount('posts')->get();
         return view('informasi.show', compact('title', 'description', 'post', 'popularPosts', 'categories'));
     }
+
+    public function tentang()
+    {
+        return view('informasi.tentang', [
+            'title' => 'Tentang desa',
+        ]);
+    }
 }

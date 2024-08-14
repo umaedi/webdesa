@@ -28,13 +28,17 @@ class AuthController extends Controller
     public function store(Request $request)
     {
         $validate = $request->validate([
-            'nik'  => 'required|unique:users',
-            'nama'  => 'required',
-            'password'  => 'required',
-            'no_tlp'  => 'required',
-            'alamat'  => 'required',
+            'nik'           => 'required|unique:users',
+            'nama'          => 'required',
+            'ttl'           => 'required',
+            'jenis_kelamin' => 'required',
+            'status'        => 'required',
+            'pekerjaan'     => 'required',
+            'agama'         => 'required',
+            'alamat'        => 'required',
+            'no_tlp'        => 'required',
+            'password'      => 'required',
         ]);
-
         $validate['password'] = Hash::make($request->password);
 
         User::create($validate);

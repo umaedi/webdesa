@@ -10,7 +10,7 @@
 					<span class="text-uppercase text-sm letter-spacing text-white">Selamat datang di</span>
 					<h1 class="mb-3 mt-3 text-white">Desa Pematang Sukaramah</h1>
 					<div class="btn-container ">
-						<a href="#" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Tentang kami <i class="icofont-simple-right ml-2  "></i></a>
+						<a href="/tentang" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">Tentang kami <i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
 			</div>
@@ -22,16 +22,6 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="feature-block d-lg-flex">
-					<div class="feature-item mb-5 mb-lg-0">
-						<div class="feature-icon mb-4">
-							<i class="icofont-surgeon-alt"></i>
-						</div>
-						<span>Layanan</span>
-						<h4 class="mb-3">Buku tamu</h4>
-						<p class="mb-4">Buta janji temu dengan kami</p>
-						<a href="#" class="btn btn-main btn-round-full">Buat janji temu</a>
-					</div>
-				
 					<div class="feature-item mb-5 mb-lg-0">
 						<div class="feature-icon mb-4">
 							<i class="icofont-ui-clock"></i>

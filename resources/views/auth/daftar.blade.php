@@ -3,7 +3,7 @@
 @include('components.bard')
 <section class="appoinment section">
     <div class="container">
-      <div class="row text-center justify-content-center">
+      <div class="row  justify-content-center">
         <div class="col-lg-6">
              <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
               @if (session('success'))
@@ -17,33 +17,52 @@
                   @csrf
                       <div class="row">
                         <div class="col-lg-12">
-                            <div class="form-group">
-                                <input name="nik" type="text" class="form-control" placeholder="NIK">
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
                           <div class="form-group">
-                              <input name="nama" type="text" class="form-control" placeholder="Nama Lengkap">
-                          </div>
+                            <label for="" class="label">NIK</label>
+                            <input type="text" class="form-control" name="nik">
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                              <input name="password" type="text" class="form-control" placeholder="Password">
-                          </div>
+                        <div class="form-group">
+                            <label for="" class="label">Nama</label>
+                            <input type="text" class="form-control" name="nama">
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                              <input name="no_tlp" type="text" class="form-control" placeholder="No Tlp/WhatsApp">
-                          </div>
+                        <div class="form-group">
+                            <label for="" class="label">Tempat Tanggal Lahir</label>
+                            <input type="text" class="form-control" name="ttl">
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                              <input name="alamat" type="text" class="form-control" placeholder="Alamat">
-                          </div>
+                        <div class="form-group">
+                            <label for="" class="label">Jenis Kelamin</label>
+                            <input type="text" class="form-control" name="jenis_kelamin">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">Status</label>
+                            <input type="text" class="form-control" name="status">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">Pekerjaan</label>
+                            <input type="text" class="form-control" name="pekerjaan">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">Agama</label>
+                            <input type="text" class="form-control" name="agama">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">Alamat</label>
+                            <input type="text" class="form-control" name="alamat">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">No Telepon/WhatsApp</label>
+                            <input type="text" class="form-control" name="no_tlp">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">Password</label>
+                            <input type="text" class="form-control" name="password">
+                        </div>
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-main btn-round-full mb-2" href="confirmation.html">Daftar sekarang <use Illuminate\Support\Facades\Hash;i class="icofont-simple-right ml-2"></use></button>
-                      <p>Belum punya akun? <a href="{{ route('daftar') }}">daftar disini</a></p>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-main btn-round-full mb-2">Daftar sekarang <use Illuminate\Support\Facades\Hash;i class="icofont-simple-right ml-2"></use></button>
+                        <p>Sudah punya akun? <a href="{{ route('login') }}">login disini</a></p>
+                      </div>
                   </form>
               </div>
           </div>

@@ -48,7 +48,7 @@ class DashboardPostController extends Controller
             'slug'   => 'required|unique:posts',
             'category_id'   => 'required|numeric',
             'deskripsi'   => 'required',
-            'image' => 'required|image|file|max:1024',
+            'image' => 'required|max:2024',
             'body'   => 'required'
         ]);
 

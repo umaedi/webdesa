@@ -31,7 +31,14 @@
                               <th scope="row">{{ $key + 1 }}</th>
                               <td>{{ $item->judul }}</td>
                               <td>{{ $item->category->name }}</td>
-                              <td><a href="/admin/posts/{{ $item->id }}/edit"><span class="badge badge-primary">Lihat</span></a></td>
+                              <form action="/admin/posts/{{ $item->id }}" method="POST">
+                                  @csrf
+                                  @method('DELETE')
+                              <td>
+                                <a class="btn btn-primary btn-sm" href="/admin/posts/{{ $item->id }}/edit">Lihat</a>
+                                  <button class="btn btn-danger btn-sm" type="submit">Hapus</button>
+                                </td>
+                              </form>
                             </tr>
                           @empty
                           <tr class="text-center">

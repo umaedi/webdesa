@@ -39,6 +39,44 @@
                                         </a>
                                     </div>
                                 </div>
+                                @if ($suket->kategorisuket->slug == 'surat-keterangan-usaha')
+                                <label class="mt-3" for="">Nama usaha</label>
+                            <input type="text" class="form-control" value="{{ $suket->nama_usaha }}">
+                            @elseif ($suket->kategorisuket->slug == 'surat-kehilangan')
+                            <label class="mt-3" for="">Barang yang hilang</label>
+                            <input type="text" class="form-control" value="{{ $suket->barang_hilang }}">
+                            @elseif ($suket->kategorisuket->slug == 'surat-keterangan-nikah')
+                            <label class="mt-3" for="">Nama calon mempelai pria</label>
+                            <input type="text" class="form-control" value="{{ $suket->nama_catin_pria }}">
+                            <label class="mt-3" for="">Tempat tanggal lahir calon mempelai pria</label>
+                            <input type="text" class="form-control" value="{{ $suket->ttl_catin_pria }}">
+                            <label class="mt-3" for="">Pekerjaan calon mempelai pria</label>
+                            <input type="text" class="form-control" value="{{ $suket->pekerjaan_catin_pria }}">
+                            <label class="mt-3" for="">Alamat calon mempelai pria</label>
+                            <input type="text" class="form-control" value="{{ $suket->alamat_catin_pria }}">
+                            
+                            <label class="mt-3" for="">Nama calon mempelai wanita</label>
+                            <input type="text" class="form-control" value="{{ $suket->nama_catin_wanita }}">
+                            <label class="mt-3" for="">Tempat tanggal lahir calon mempelai wanita</label>
+                            <input type="text" class="form-control" value="{{ $suket->ttl_catin_wanita }}">
+                            <label class="mt-3" for="">Pekerjaan calon mempelai wanita</label>
+                            <input type="text" class="form-control" value="{{ $suket->pekerjaan_catin_wanita }}">
+                            <label class="mt-3" for="">Alamat calon mempelai wanita</label>
+                            <input type="text" class="form-control" value="{{ $suket->alamat_catin_wanita }}">
+                            @elseif($suket->kategorisuket->slug == 'surat-keterangan-tidak-mampu')
+                            <label class="mt-3" for="">Nama pemohon dispensasi</label>
+                            <input type="text" class="form-control" value="{{ $suket->nama_pemohon_dispenasasi }}">
+                            <label class="mt-3" for="">Tempat tanggal lahir pemohon dispensasi</label>
+                            <input type="text" class="form-control" value="{{ $suket->ttl_pemohon_dispenasasi }}">
+                            <label class="mt-3" for="">Jenis kelamin pemohon dispensasi</label>
+                            <input type="text" class="form-control" value="{{ $suket->jenis_kelamin_pemohon_dispenasasi }}">
+                            <label class="mt-3" for="">Pekerjaan pemohon dispensasi</label>
+                            <input type="text" class="form-control" value="{{ $suket->pekerjaan_pemohon_dispenasasi }}">
+                            <label class="mt-3" for="">Alamat pemohon dispensasi</label>
+                            <input type="text" class="form-control" value="{{ $suket->alamat_pemohon_dispenasasi }}">
+                            @endif
+                            <label class="mt-3" for="">Keterangan</label>
+                            <textarea class="form-control">{{ $suket->keterangan }}</textarea>
                             </div>
                         </div>
                     </div>

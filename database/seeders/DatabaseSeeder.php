@@ -21,21 +21,31 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::create([
-            'nik' => '1741010248',
-            'nama' => 'Admin',
-            'no_tlp'    => '085741492045',
-            'password'  => Hash::make('admin123'),
-            'alamat'    => 'Jalan sama aku nikah sama dia',
-            'role'  => 'admin',
+            'nik'           => '1602205503020002',
+            'nama'          => 'UMAEDI',
+            'ttl'           => 'Way Kanan, 17 Agustus 1998',
+            'jenis_kelamin' => 'Laki-Laki',
+            'status'        => 'Lajang',
+            'pekerjaan'     => 'Web Developer',
+            'agama'         => 'Islam',
+            'alamat'        => 'Jalan sama aku nikah sama dia',
+            'no_tlp'        => '085741492045',
+            'password'      => Hash::make('admin123'),
+            'role'          => 'admin',
         ]);
 
         User::create([
-            'nik' => '1741010249',
-            'nama' => 'User',
-            'no_tlp'    => '085741492045',
-            'password'  => Hash::make('user123'),
-            'alamat'    => 'Jalan sama aku nikah sama dia',
-            'role'  => 'user',
+            'nik'           => '1741010249',
+            'nama'          => 'Nesya',
+            'ttl'           => 'Way Kanan, 17 Agustus 1998',
+            'jenis_kelamin' => 'Perempuan',
+            'status'        => 'Lajang',
+            'pekerjaan'     => 'Mahasiswa',
+            'agama'         => 'Islam',
+            'alamat'        => 'Jalan sama aku nikah sama dia',
+            'no_tlp'        => '085741492046',
+            'password'      => Hash::make('user123'),
+            'role'          => 'user',
         ]);
 
         $data = [

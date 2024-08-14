@@ -8,14 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Suket extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'kategorisuket_id',
-        'user_id',
-        'ktp',
-        'kk',
-        'status',
-        'file_suket'
-    ];
+    protected $guarded = ['id'];
 
     public function kategorisuket()
     {
