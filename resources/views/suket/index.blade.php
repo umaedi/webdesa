@@ -56,8 +56,40 @@
                         <div class="col-md-6">
                           <form method="post" action="/suket/store" enctype="multipart/form-data">
                             @csrf
+                            @if ($slug == 'surat-keterangan-nikah')
                             <div class="form-group">
-                              <label for="" class="label">Foto Copy KK</label>
+                              <label for="" class="label">Foto Copy KK calon mempelai pria</label>
+                              <input type="hidden" name="kategorisuket_id" value="{{ $kategorisuket_id }}">
+                              <input type="file" class="form-control" name="kk">
+                              @error('kk')
+                              <span style="color: red">{{ $message }}</span>
+                              @enderror
+                            </div>
+                            <div class="form-group">
+                              <label for="" class="label">Foto Copy KTP calon mempelai pria</label>
+                              <input type="file" class="form-control" name="ktp">
+                              @error('ktp')
+                              <span style="color: red">{{ $message }}</span>
+                              @enderror
+                            </div>
+                            <div class="form-group">
+                              <label for="" class="label">Foto Copy KK calon mempelai wanita</label>
+                              <input type="hidden" name="kategorisuket_id" value="{{ $kategorisuket_id }}">
+                              <input type="file" class="form-control" name="kk_wanita">
+                              @error('kk')
+                              <span style="color: red">{{ $message }}</span>
+                              @enderror
+                            </div>
+                            <div class="form-group">
+                              <label for="" class="label">Foto Copy KTP calon mempelai wanita</label>
+                              <input type="file" class="form-control" name="ktp_wanita">
+                              @error('ktp')
+                              <span style="color: red">{{ $message }}</span>
+                              @enderror
+                            </div>
+                            @else
+                            <div class="form-group">
+                              <label for="" class="label">Foto Copy KK </label>
                               <input type="hidden" name="kategorisuket_id" value="{{ $kategorisuket_id }}">
                               <input type="file" class="form-control" name="kk">
                               @error('kk')
@@ -71,13 +103,21 @@
                               <span style="color: red">{{ $message }}</span>
                               @enderror
                             </div>
-
+                            @endif
                             @if ($slug == 'surat-keterangan-usaha')
+                              <div class="form-group">
+                                <label for="" class="label">Bukti usaha</label>
+                                <input type="file" class="form-control" name="suket_usaha" required>
+                              </div>
                               <div class="form-group">
                                 <label for="" class="label">Nama Usaha</label>
                                 <input type="text" class="form-control" name="nama_usaha" required>
                               </div>
                             @elseif ($slug == 'surat-kehilangan')
+                            <div class="form-group">
+                              <label for="" class="label">Surat bukti kehilangan</label>
+                              <input type="file" class="form-control" name="suket_bukti_hilang" required>
+                            </div>
                             <div class="form-group">
                               <label for="" class="label">Barang yang hilang</label>
                               <input type="text" class="form-control" name="barang_hilang" required>
@@ -116,6 +156,10 @@
                               <input type="text" class="form-control" name="alamat_catin_wanita" required>
                             </div>
                             @elseif( $slug =='surat-keterangan-tidak-mampu')
+                            <div class="form-group">
+                              <label for="" class="label">Surat keterangan tidak mampu</label>
+                              <input type="file" class="form-control" name="suket_tidak_mampu" required>
+                            </div>
                             <div class="form-group">
                               <label for="" class="label">Nama pemohon dispensasi</label>
                               <input type="text" class="form-control" name="nama_pemohon_dispenasasi" required>

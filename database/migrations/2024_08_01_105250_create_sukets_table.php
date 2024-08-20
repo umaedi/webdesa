@@ -17,6 +17,11 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->string('ktp');
             $table->string('kk');
+            $table->string('kk_wanita')->nullable();
+            $table->string('ktp_wanita')->nullable();
+            $table->string('suket_tidak_mampu')->nullable();
+            $table->string('suket_usaha')->nullable();
+            $table->string('suket_bukti_hilang')->nullable();
             $table->string('nama_usaha')->nullable();
             $table->string('barang_hilang')->nullable();
             $table->string('keterangan')->nullable();

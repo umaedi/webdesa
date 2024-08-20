@@ -86,16 +86,38 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="row mt-3">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <a href="{{ asset('storage/'.$suket->kk) }}">
                                         <img src="{{ asset('storage/'.$suket->kk) }}" alt="lampiran" width="100%">
                                     </a>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <a href="{{ asset('storage/'.$suket->ktp) }}">
                                         <img src="{{ asset('storage/'.$suket->ktp) }}" alt="lampiran" width="100%">
                                     </a>
                                 </div>
+
+                                @if ($suket->kategorisuket->slug == 'surat-keterangan-nikah')
+                                <div class="col-md-4">
+                                    <a href="{{ asset('storage/'.$suket->kk_wanita) }}">
+                                        <img src="{{ asset('storage/'.$suket->kk_wanita) }}" alt="lampiran" width="100%">
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="{{ asset('storage/'.$suket->ktp_wanita) }}">
+                                        <img src="{{ asset('storage/'.$suket->ktp_wanita) }}" alt="lampiran" width="100%">
+                                    </a>
+                                </div>
+                                @endif
+
+                                @if ($suket->kategorisuket->slug == 'surat-keterangan-tidak-mampu')
+                                <div class="col-md-4">
+                                    <a href="{{ asset('storage/'.$suket->suket_tidak_mampu) }}">
+                                        <img src="{{ asset('storage/'.$suket->suket_tidak_mampu) }}" alt="lampiran" width="100%">
+                                    </a>
+                                </div>
+                                @endif
+
                             </div>
                             @if ($suket->kategorisuket->slug == 'surat-keterangan-usaha')
                             <label class="mt-3" for="">Nama usaha</label>

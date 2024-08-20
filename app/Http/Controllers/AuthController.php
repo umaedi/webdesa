@@ -55,7 +55,7 @@ class AuthController extends Controller
                 return \redirect('/user/dashboard');
             }
         }else {
-            return back()->with('error', 'Alamat Email atau Password Anda salah!.');
+            return back()->with('error', 'NIK atau Password Anda salah!.');
         }
     }
 

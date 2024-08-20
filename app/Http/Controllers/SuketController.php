@@ -29,14 +29,43 @@ class SuketController extends Controller
 
         $ktp = $request->file('ktp')->store('lampiran', 'public');
         $kk = $request->file('kk')->store('lampiran', 'public');
+
+        if($request->hasFile('suket_tidak_mampu')) {
+            $suket_tidak_mampu = $request->file('suket_tidak_mampu')->store('lampiran', 'public');
+        }else {
+            $suket_tidak_mampu = "";
+        }
+
+        if($request->hasFile('suket_usaha')) {
+            $suket_usaha = $request->file('suket_usaha')->store('lampiran', 'public');
+        }else {
+            $suket_usaha = "";
+        }
+
+        if($request->hasFile('kk_wanita')) {
+            $kk_wanita = $request->file('kk_wanita')->store('lampiran', 'public');
+        }else {
+            $kk_wanita = "";
+        }
+
+        if($request->hasFile('ktp_wanita')) {
+            $ktp_wanita = $request->file('ktp_wanita')->store('lampiran', 'public');
+        }else {
+            $ktp_wanita = "";
+        }
         
         Suket::create([
             'kategorisuket_id'  => $request->kategorisuket_id,
             'user_id'       => Auth::user()->id,
             'ktp'           => $ktp,
+            'ktp_wanita'    => $ktp_wanita,
             'kk'            => $kk,
+            'kk_wanita'     => $kk_wanita,
+            'suket_tidak_mampu'  => $suket_tidak_mampu,
+            'suket_usaha'  => $suket_usaha,
             'nama_usaha'    => $request->nama_usaha,
             'barang_hilang'    => $request->barang_hilang,
+            'suket_bukti_hilang'    => $request->suket_bukti_hilang,
             'keterangan'    => $request->keterangan,
             'nama_catin_pria'    => $request->nama_catin_pria,
             'ttl_catin_pria'    => $request->ttl_catin_pria,

@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
             ['kategori_suket'    => 'Surat Keterangan Usaha', 'slug' => 'surat-keterangan-usaha'],
             ['kategori_suket'    => 'Surat Kehilangan', 'slug' => 'surat-kehilangan'],
             ['kategori_suket'    => 'Surat Keterangan Domisili', 'slug' => 'surat-keterangan-domisili'],
-            ['kategori_suket'    => 'Surat Keterangan Nikah', 'slug' => 'surat-keterangan-nikah'],
+            ['kategori_suket'    => 'Surat Pengantar Nikah', 'slug' => 'surat-keterangan-nikah'],
             ['kategori_suket'    => 'Surat Keterangan Tidak Mampu', 'slug' => 'surat-keterangan-tidak-mampu'],
         ];
         
