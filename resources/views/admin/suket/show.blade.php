@@ -97,6 +97,14 @@
                                     </a>
                                 </div>
 
+                                @if ($suket->kategorisuket->slug == 'surat-kehilangan')
+                                <div class="col-md-4">
+                                    <a href="{{ asset('storage/'.$suket->suket_bukti_hilang) }}">
+                                        <img src="{{ asset('storage/'.$suket->suket_bukti_hilang) }}" alt="lampiran" width="100%">
+                                    </a>
+                                </div>
+                                @endif
+
                                 @if ($suket->kategorisuket->slug == 'surat-keterangan-nikah')
                                 <div class="col-md-4">
                                     <a href="{{ asset('storage/'.$suket->kk_wanita) }}">
