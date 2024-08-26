@@ -27,7 +27,7 @@
                         </div>
                         <div class="form-group">
                             <label for="" class="label">Tempat Tanggal Lahir</label>
-                            <input type="text" class="form-control" name="ttl">
+                            <input type="date" class="form-control" name="ttl">
                         </div>
                         <div class="form-group">
                             <label for="" class="label">Jenis Kelamin</label>

@@ -89,7 +89,7 @@
                             </div>
                             @else
                             <div class="form-group">
-                              <label for="" class="label">Foto Copy KK </label>
+                              <label for="" class="label">Foto Copy KK (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="hidden" name="kategorisuket_id" value="{{ $kategorisuket_id }}">
                               <input type="file" class="form-control" name="kk">
                               @error('kk')
@@ -97,7 +97,7 @@
                               @enderror
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Foto Copy KTP</label>
+                              <label for="" class="label">Foto Copy KTP (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="file" class="form-control" name="ktp">
                               @error('ktp')
                               <span style="color: red">{{ $message }}</span>
@@ -106,78 +106,78 @@
                             @endif
                             @if ($slug == 'surat-keterangan-usaha')
                               <div class="form-group">
-                                <label for="" class="label">Bukti usaha</label>
+                                <label for="" class="label">Bukti usaha (<span style="color: red;"><b>*</b></span>)</label>
                                 <input type="file" class="form-control" name="suket_usaha" required>
                               </div>
                               <div class="form-group">
-                                <label for="" class="label">Nama Usaha</label>
+                                <label for="" class="label">Nama Usaha (<span style="color: red;"><b>*</b></span>)</label>
                                 <input type="text" class="form-control" name="nama_usaha" required>
                               </div>
                             @elseif ($slug == 'surat-kehilangan')
                             <div class="form-group">
-                              <label for="" class="label">Surat bukti kehilangan</label>
+                              <label for="" class="label">Surat bukti kehilangan (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="file" class="form-control" name="suket_bukti_hilang" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Barang yang hilang</label>
+                              <label for="" class="label">Barang yang hilang (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="barang_hilang" required>
                             </div>
                             @elseif ($slug == 'surat-keterangan-nikah')
                             <div class="form-group">
-                              <label for="" class="label">Nama calon mempelai pria</label>
+                              <label for="" class="label">Nama calon mempelai pria (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="nama_catin_pria" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Tempat tanggal lahir calon mempelai pria</label>
+                              <label for="" class="label">Tempat tanggal lahir calon mempelai pria (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="ttl_catin_pria" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Pekerjaan calon mempelai pria</label>
+                              <label for="" class="label">Pekerjaan calon mempelai pria (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="pekerjaan_catin_pria" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Alamat calon mempelai pria</label>
+                              <label for="" class="label">Alamat calon mempelai pria (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="alamat_catin_pria" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Nama calon mempelai wanita</label>
+                              <label for="" class="label">Nama calon mempelai wanita (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="nama_catin_wanita" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Tempat tanggal lahir calon mempelai wanita</label>
+                              <label for="" class="label">Tempat tanggal lahir calon mempelai wanita (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="ttl_catin_wanita" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Pekerjaan calon mempelai wanita</label>
+                              <label for="" class="label">Pekerjaan calon mempelai wanita (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="pekerjaan_catin_wanita" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Alamat calon mempelai wanita</label>
+                              <label for="" class="label">Alamat calon mempelai wanita (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="alamat_catin_wanita" required>
                             </div>
                             @elseif( $slug =='surat-keterangan-tidak-mampu')
                             <div class="form-group">
-                              <label for="" class="label">Surat keterangan tidak mampu</label>
+                              <label for="" class="label">Surat keterangan tidak mampu (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="file" class="form-control" name="suket_tidak_mampu" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Nama pemohon dispensasi</label>
+                              <label for="" class="label">Nama pemohon dispensasi (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="nama_pemohon_dispenasasi" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Tempat tanggal lahir pemohon dispensasi</label>
+                              <label for="" class="label">Tempat tanggal lahir pemohon dispensasi (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="ttl_pemohon_dispenasasi" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Jenis kelamin pemohon dispensasi</label>
+                              <label for="" class="label">Jenis kelamin pemohon dispensasi (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="jenis_kelamin_pemohon_dispenasasi" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Pekerjaan pemohon dispensasi</label>
+                              <label for="" class="label">Pekerjaan pemohon dispensasi (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="pekerjaan_pemohon_dispenasasi" required>
                             </div>
                             <div class="form-group">
-                              <label for="" class="label">Alamat pemohon dispensasi</label>
+                              <label for="" class="label">Alamat pemohon dispensasi (<span style="color: red;"><b>*</b></span>)</label>
                               <input type="text" class="form-control" name="alamat_pemohon_dispenasasi" required>
                             </div>
                             @endif

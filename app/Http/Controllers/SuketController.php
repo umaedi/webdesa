@@ -53,6 +53,12 @@ class SuketController extends Controller
         }else {
             $ktp_wanita = "";
         }
+
+        if($request->hasFile('suket_bukti_hilang')) {
+            $suket_bukti_hilang = $request->file('suket_bukti_hilang')->store('lampiran', 'public');
+        }else {
+            $suket_bukti_hilang = "";
+        }
         
         Suket::create([
             'kategorisuket_id'  => $request->kategorisuket_id,
@@ -65,7 +71,7 @@ class SuketController extends Controller
             'suket_usaha'  => $suket_usaha,
             'nama_usaha'    => $request->nama_usaha,
             'barang_hilang'    => $request->barang_hilang,
-            'suket_bukti_hilang'    => $request->suket_bukti_hilang,
+            'suket_bukti_hilang'    =>  $suket_bukti_hilang,
             'keterangan'    => $request->keterangan,
             'nama_catin_pria'    => $request->nama_catin_pria,
             'ttl_catin_pria'    => $request->ttl_catin_pria,
