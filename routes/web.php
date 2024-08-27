@@ -123,6 +123,13 @@ Route::middleware('auth')->group(function() {
             Route::post('/kategori/update/{id}', 'update')->name('admin.kategori.update');
         });
 
+        Route::get('/nik', [Admin\NikController::class, 'index'])->name('admin.nik');
+        Route::get('/nik/create', [Admin\NikController::class, 'create'])->name('admin.nik.create');
+        Route::post('/nik/store', [Admin\NikController::class, 'store'])->name('admin.nik.store');
+        Route::get('/nik/show/{id}', [Admin\NikController::class, 'show'])->name('admin.nik.show');
+        Route::post('/nik/update/{id}', [Admin\NikController::class, 'update'])->name('admin.nik.update');
+        Route::get('/nik/delete/{id}', [Admin\NikController::class, 'delete'])->name('admin.nik.delete');
+
         Route::get('/migrate', function() {
             Artisan::call('migrate:fresh', [
                 '--seed' => true,

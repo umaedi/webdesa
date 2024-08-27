@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Nik;
 
 class AuthController extends Controller
 {
@@ -27,6 +28,10 @@ class AuthController extends Controller
 
     public function store(Request $request)
     {
+        if (!Nik::where('nik', $request->nik)->exists()) {
+            return back()->with('error', 'NIK Tidak terdaftar pada sistem kami');
+        }
+
         $validate = $request->validate([
             'nik'           => 'required|unique:users',
             'nama'          => 'required',

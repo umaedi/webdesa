@@ -12,6 +12,12 @@
                 <p>{{ session('success') }}</p>
               </div>
               @endif
+              @if (session('error'))
+              <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">Gagal</h4>
+                <p>{{ session('error') }}</p>
+              </div>
+              @endif
               <p class="mb-4">Silakan lengkapi data diri Anda pada form dibawah ini</p>
                  <form class="appoinment-form" method="post" action="/daftar">
                   @csrf
@@ -31,7 +37,10 @@
                         </div>
                         <div class="form-group">
                             <label for="" class="label">Jenis Kelamin</label>
-                            <input type="text" class="form-control" name="jenis_kelamin">
+                            <select class="form-control" name="jenis_kelamin" id="jenis_kelamin">
+                              <option value="Laki-Laki">Laki-Laki</option>
+                              <option value="Perempuan">Perempuan</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="" class="label">Status</label>

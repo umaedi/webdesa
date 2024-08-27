@@ -73,6 +73,9 @@
             <li class="{{ Request::is('admin/kategori*') ? 'active' : '' }}">
               <a href="{{ route('admin.kategori') }}" class="nav-link "><i class="fa fa-qrcode"></i><span>Kategori Informasi</span></a>
             </li>
+            <li class="{{ Request::is('admin/nik*') ? 'active' : '' }}">
+              <a href="{{ route('admin.nik') }}" class="nav-link "><i class="fa fa-database"></i><span>Master NIK Masyarakat</span></a>
+            </li>
           </ul>
        </aside>
       </div>
