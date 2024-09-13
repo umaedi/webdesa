@@ -114,21 +114,22 @@
 			</div>
 		</div>
 
-            <div class="row">
-				@forelse ($posts as $post)
-				<div class="col-lg-4 col-md-6 ">
-                    <div class="department-block mb-5">
-                        <img lazy="loading" src="{{ asset('storage/'. $post->image) }}" alt="" class="img-fluid w-100 rounded">
-                        <div class="content">
-                            <h4 class="mt-4 mb-2 title-color">{{ $post->judul }}</h4>
-                            <p class="mb-4">{{ $post->deskripsi }}</p>
-                            <a href="/informasi/detail/{{ $post->slug }}" class="read-more">Selengkapnya  <i class="icofont-simple-right ml-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-				@empty
-					
-				@endforelse
+		<div class="row">
+			@forelse ($posts as $post)
+			<div class="col-lg-4 col-sm-12 mb-4">
+				<div class="department-block mb-5">
+					<img loading="lazy" src="{{ asset('storage/'. $post->image) }}" alt="" class="img-fluid w-100 rounded">
+					<div class="content">
+						<h4 class="mt-4 mb-2 title-color">{{ $post->judul }}</h4>
+						<p class="mb-4">{{ $post->deskripsi }}</p>
+						<a href="/informasi/detail/{{ $post->slug }}" class="read-more">Selengkapnya <i class="icofont-simple-right ml-2"></i></a>
+					</div>
+				</div>
+			</div>
+			@empty
+			<p class="text-center w-100">Belum ada postingan</p>
+			@endforelse
+		</div>
         </div>
 	</div>
 </section>

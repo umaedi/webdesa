@@ -564,11 +564,11 @@ a:focus {
     }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .banner {
         background: #fff !important;
     }
-}
+} */
 
 .about-img img {
     border-radius: 5px;
