@@ -79,12 +79,12 @@
 <section class="section appoinment">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-6 ">
+			<div class="col-lg-6 col-12">
 				<div class="appoinment-content">
-					<img lazy="loading" src="images/about/kepala_desa.png" alt="" class="img-fluid">
+					<img lazy="loading" src="images/about/kepala_desa.jpg" alt="" class="img-fluid">
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-10 ">
+			<div class="col-lg-6 col-sm-12">
 				<div class="appoinment-wrap mt-5 mt-lg-0">
 					<h2 class="mb-2 title-color">Sambutan kepala desa</h2>
 					<p class="mb-4">

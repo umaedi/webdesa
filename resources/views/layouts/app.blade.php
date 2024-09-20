@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+  <meta name="description" content="Website desa pematang sukaramah">
   <meta name="author" content="themefisher.com">
 
   <title>{{ $title ?? 'Website Desa Pematang Sukaramah' }}</title>
