@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="{{ asset('novena') }}/plugins/slick-carousel/slick/slick-theme.css">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="{{ asset('novena') }}/css/style.css">
+  <link rel="stylesheet" href="{{ asset('css') }}/style.css">
 
 </head>
 

@@ -116,7 +116,7 @@
 
 		<div class="row">
 			@forelse ($posts as $post)
-			<div class="col-lg-4 col-sm-12 mb-4">
+			<div class="col-lg-4 mb-4">
 				<div class="department-block mb-5">
 					<img loading="lazy" src="{{ asset('storage/'. $post->image) }}" alt="" class="img-fluid w-100 rounded">
 					<div class="content">

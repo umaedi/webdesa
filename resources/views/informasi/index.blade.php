@@ -5,7 +5,7 @@
       <div class="container">
           <div class="row">
             @foreach ($posts as $post)
-            <div class="col-lg-4 col-md-6 ">
+            <div class="col-lg-4 col-md-12">
                 <div class="department-block mb-5">
                     <img src="{{ asset('storage/'.$post->image) }}" alt="" class="img-fluid w-100 rounded">
                     <div class="content">
